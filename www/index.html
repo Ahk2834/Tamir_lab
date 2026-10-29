@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#7547ff" />
+  <meta name="description" content="TamirLab: evde güvenli tamir, elektronik, robotik ve programlama atölyeleri." />
+  <link rel="manifest" href="./manifest.webmanifest" />
+  <link rel="icon" href="./icon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="./styles.css" />
+  <title>TamirLab — Tamir et, keşfet, üret.</title>
+</head>
+<body>
+  <div class="app-shell">
+    <header class="topbar">
+      <a class="brand" href="#top" aria-label="TamirLab ana sayfa">
+        <span class="brand-mark"><span>✦</span></span>
+        <span class="brand-name">tamir<span>lab</span><small>EV • ELEKTRONİK • STEM</small></span>
+      </a>
+      <nav class="desktop-nav" aria-label="Ana menü">
+        <a class="nav-link active" href="#atolyeler">Atölyeler</a>
+        <a class="nav-link" href="#projeler">Projeler</a>
+        <a class="nav-link" href="#tamir">Evde tamir</a>
+      </nav>
+      <div class="top-actions">
+        <button class="icon-button search-open" aria-label="Arama" title="Ara">⌕</button>
+        <a href="#projeler" class="button button-small button-purple">Keşfet <span>↗</span></a>
+        <button class="menu-toggle" aria-label="Menüyü aç">☰</button>
+      </div>
+    </header>
+
+    <main id="top">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <div class="eyebrow"><span class="eyebrow-dot"></span> MERAK ET • DENE • ÜRET</div>
+          <h1 id="hero-title">Tamir et.<br /><span class="headline-mark">Keşfet.</span> Üret.</h1>
+          <p class="hero-text">Evde güvenli küçük çözümler, çocuklarla STEM deneyleri ve kendi robotunu yapmanın keyfi. Hepsi bir arada, adım adım.</p>
+          <div class="hero-actions">
+            <a href="#atolyeler" class="button button-dark">Atölyeleri keşfet <span>→</span></a>
+            <a href="#tamir" class="text-link">Evde tamir rehberleri <span>↗</span></a>
+          </div>
+          <div class="hero-proof">
+            <div class="avatar-stack" aria-hidden="true"><span>🧑🏻‍🔬</span><span>👩🏽‍💻</span><span>🧒🏻</span></div>
+            <p><strong>Ailece öğren, birlikte üret.</strong><br /><span>İlkokuldan liseye, her meraka bir proje.</span></p>
+          </div>
+        </div>
+        <div class="hero-art" aria-label="Renkli robot atölyesi çizimi" role="img">
+          <div class="art-sun"></div><div class="art-orbit orbit-one"></div><div class="art-orbit orbit-two"></div>
+          <div class="spark spark-a">✦</div><div class="spark spark-b">✳</div><div class="spark spark-c">✦</div>
+          <div class="floating-note note-top"><span class="note-icon note-yellow">⚡</span><span><b>Fikirden projeye</b><small>adım adım öğren</small></span></div>
+          <div class="floating-note note-bottom"><span class="note-icon note-coral">✿</span><span><b>150 proje hedefi</b><small>3 eğitim seviyesi</small></span></div>
+          <div class="robot">
+            <div class="robot-antenna"><i></i></div>
+            <div class="robot-head"><div class="robot-ear ear-left"></div><div class="robot-ear ear-right"></div><div class="robot-eye eye-left"></div><div class="robot-eye eye-right"></div><div class="robot-smile"></div></div>
+            <div class="robot-neck"></div>
+            <div class="robot-body"><div class="body-screen"><span></span><span></span><span></span></div><div class="body-badge">TL</div></div>
+            <div class="robot-arm arm-left"><i></i></div><div class="robot-arm arm-right"><i></i></div>
+            <div class="robot-leg leg-left"></div><div class="robot-leg leg-right"></div>
+            <div class="robot-shadow"></div>
+          </div>
+          <div class="mini-gear gear-one">⚙</div><div class="mini-gear gear-two">⚙</div>
+          <div class="art-caption"><span class="caption-line"></span> KÜÇÜK BİR FİKİR, KOCAMAN BİR KEŞİF</div>
+        </div>
+        <div class="hero-bottom"><span>BAŞLANGIÇ NOKTAN</span><b>Bir merak, bir fikir, bir TamirLab projesi.</b><span class="scroll-cue">AŞAĞI KAYDIR ↓</span></div>
+      </section>
+
+      <section class="quick-stats" aria-label="TamirLab özellikleri">
+        <div class="stat"><span class="stat-icon stat-purple">✦</span><div><b>4 atölye</b><small>Tamir, elektronik, robotik, kodlama</small></div></div>
+        <div class="stat"><span class="stat-icon stat-coral">◎</span><div><b>3 seviye</b><small>İlkokul • Ortaokul • Lise</small></div></div>
+        <div class="stat"><span class="stat-icon stat-turquoise">↗</span><div><b>150 proje hedefi</b><small>Her seviyeye 50 özgün fikir</small></div></div>
+        <div class="stat stat-safe"><span class="stat-icon stat-green">✓</span><div><b>Güvenlik önce gelir</b><small>Riskli işlerde doğru yönlendirme</small></div></div>
+      </section>
+
+      <section class="section workshops" id="atolyeler">
+        <div class="section-heading">
+          <div><span class="section-kicker">BİR ATÖLYE SEÇ</span><h2>Merakın hangi yöne gidiyor?</h2></div>
+          <a href="#projeler" class="subtle-link">Tüm projeler <span>↗</span></a>
+        </div>
+        <div class="workshop-grid">
+          <a href="#projeler" class="workshop-card card-electronics" data-category="Elektronik">
+            <div class="workshop-top"><span class="workshop-icon">ϟ</span><span class="card-arrow">↗</span></div>
+            <div class="workshop-art electronic-art"><span class="wire wire-a"></span><span class="wire wire-b"></span><span class="chip">R</span><span class="led led-one"></span><span class="led led-two"></span><span class="led led-three"></span></div>
+            <div class="workshop-info"><span class="mini-label">DEVRE • SENSÖR • LEHİM</span><h3>Elektronik</h3><p>Bir LED’den akıllı sensörlere, devrenin nasıl düşündüğünü keşfet.</p><span class="card-cta">Atölyeye gir <b>→</b></span></div>
+          </a>
+          <a href="#projeler" class="workshop-card card-robotics" data-category="Robotik">
+            <div class="workshop-top"><span class="workshop-icon">✳</span><span class="card-arrow">↗</span></div>
+            <div class="workshop-art robo-art"><span class="robo-wheel wheel-a"></span><span class="robo-wheel wheel-b"></span><span class="robo-base"></span><span class="robo-sensor"></span><span class="robo-eye"></span></div>
+            <div class="workshop-info"><span class="mini-label">MEKANİK • MOTOR • SENSÖR</span><h3>Robotik</h3><p>Parçaları birleştir, hareketi tasarla, kendi robotuna hayat ver.</p><span class="card-cta">Atölyeye gir <b>→</b></span></div>
+          </a>
+          <a href="#projeler" class="workshop-card card-coding" data-category="Programlama">
+            <div class="workshop-top"><span class="workshop-icon">&lt;/&gt;</span><span class="card-arrow">↗</span></div>
+            <div class="workshop-art code-art"><span class="code-block block-pink">BAŞLA</span><span class="code-block block-yellow">TEKRARLA</span><span class="code-block block-blue">HAREKET ET</span><span class="code-spark">✦</span></div>
+            <div class="workshop-info"><span class="mini-label">ALGORİTMA • KOD • DEBUG</span><h3>Programlama</h3><p>Bloklarla başla, kodla düşün, projeni çalıştırarak öğren.</p><span class="card-cta">Atölyeye gir <b>→</b></span></div>
+          </a>
+          <a href="#projeler" class="workshop-card card-stem" data-category="STEM">
+            <div class="workshop-top"><span class="workshop-icon">✦</span><span class="card-arrow">↗</span></div>
+            <div class="workshop-art stem-art"><span class="stem-planet planet-one"></span><span class="stem-planet planet-two"></span><span class="stem-path"></span><span class="stem-star">✧</span></div>
+            <div class="workshop-info"><span class="mini-label">DENEY • TASARIM • ÖLÇÜM</span><h3>STEM deneyleri</h3><p>Sorular sor, dene, ölç ve kendi çözümünü geliştir.</p><span class="card-cta">Atölyeye gir <b>→</b></span></div>
+          </a>
+        </div>
+      </section>
+
+      <section class="feature-band" id="tamir">
+        <div class="feature-illustration"><div class="tool-sun">✦</div><div class="tool-card"><span>⌁</span><b>UFAK BİR TAMİR</b><i>✓</i></div><div class="tool-shadow"></div><span class="feature-spark spark-left">✦</span><span class="feature-spark spark-right">✳</span></div>
+        <div class="feature-copy"><span class="section-kicker">EVDE GÜVENLİ TAMİR</span><h2>Küçük sorunlara<br /><em>net çözümler.</em></h2><p>Basit bakım işleri için malzeme listesi, kolay takip edilen adımlar ve ne zaman durup uzmana başvuracağını söyleyen güvenli rehberler.</p><a href="#projeler" class="button button-coral">Tamir rehberlerine bak <span>→</span></a></div>
+        <div class="feature-stamp">ÖNCE<br /><b>GÜVENLİK</b><br />SONRA TAMİR</div>
+      </section>
+
+      <section class="section project-section" id="projeler">
+        <div class="section-heading project-heading">
+          <div><span class="section-kicker">İLK ADIMINI SEÇ</span><h2>Bugün ne üretmek istersin?</h2><p class="section-description">Bunlar örnek rehberler. Her seviyede 50 özgün proje hedefiyle içerik kütüphanesi genişleyecek.</p></div>
+          <label class="search-box"><span>⌕</span><input id="projectSearch" type="search" placeholder="Proje veya malzeme ara..." aria-label="Proje veya malzeme ara" /><kbd>/</kbd></label>
+        </div>
+        <div class="filter-row" role="group" aria-label="Proje filtresi">
+          <button class="filter-chip selected" data-filter="Tümü">✦ Tümü <span>8</span></button>
+          <button class="filter-chip" data-filter="İlkokul">İlkokul</button>
+          <button class="filter-chip" data-filter="Ortaokul">Ortaokul</button>
+          <button class="filter-chip" data-filter="Lise">Lise</button>
+          <span class="filter-divider"></span>
+          <button class="filter-chip filter-outline" data-filter="Evde Tamir">⌂ Evde tamir</button>
+          <button class="filter-chip filter-outline" data-filter="Elektronik">ϟ Elektronik</button>
+          <button class="filter-chip filter-outline" data-filter="Robotik">✳ Robotik</button>
+          <button class="filter-chip filter-outline" data-filter="Programlama">&lt;/&gt; Kodlama</button>
+        </div>
+        <div class="project-grid" id="projectGrid" aria-live="polite"></div>
+        <div class="empty-state" id="emptyState" hidden><div>🔎</div><h3>Bu aramayla eşleşen proje bulamadık.</h3><p>Başka bir kelime veya kategori deneyebilirsin.</p></div>
+        <div class="load-more-wrap"><span class="button button-outline" aria-disabled="true">Örnek katalog · 150 proje hedefi</span><small>İçerikler güvenlik ve yaş uygunluğu kontrolleriyle genişletilecek.</small></div>
+      </section>
+
+      <section class="family-banner">
+        <div class="family-doodles"><span class="doodle d1">✦</span><span class="doodle d2">◌</span><span class="doodle d3">✳</span><span class="doodle d4">↗</span></div>
+        <div class="family-copy"><span class="section-kicker">BİRLİKTE DAHA GÜZEL</span><h2>Merakını paylaş,<br /><span>birlikte yapın.</span></h2><p>Aileler ve öğretmenler için adımları, malzemeleri ve görev paylaşımını anlaşılır hâle getiren projeler.</p></div>
+        <div class="family-circles"><div class="family-person person-one">🧒🏻</div><div class="family-person person-two">👩🏽‍🔧</div><div class="family-person person-three">👨🏻‍💻</div><div class="family-orbit"></div><span class="family-heart">♥</span></div>
+      </section>
+
+      <section class="safety-strip"><div class="safety-shield">✓</div><div><b>Güvenli sınırlar, iyi fikirlerin parçasıdır.</b><p>Uzmanlık veya tehlikeli müdahale gerektiren işler uygulamada adım adım anlatılmaz.</p></div><a href="#tamir">Güvenlik yaklaşımını gör <span>→</span></a></section>
+    </main>
+
+    <footer class="footer"><a class="brand brand-footer" href="#top"><span class="brand-mark"><span>✦</span></span><span class="brand-name">tamir<span>lab</span><small>TAMİR ET, KEŞFET, ÜRET.</small></span></a><p>Bir fikirle başlar. Birlikte öğrenerek büyür.</p><span class="footer-copy">© TamirLab · Güvenli üretim, güzel keşifler.</span></footer>
+  </div>
+  <div class="modal-backdrop" id="modalBackdrop" hidden><article class="project-modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle"><button class="modal-close" id="modalClose" aria-label="Kapat">×</button><div id="modalContent"></div></article></div>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="./app.js" defer></script>
+  <script>if ('serviceWorker' in navigator && location.protocol.startsWith('http')) navigator.serviceWorker.register('./service-worker.js').catch(()=>{});</script>
+</body>
+</html>
