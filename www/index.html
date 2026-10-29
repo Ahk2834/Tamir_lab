@@ -102,7 +102,7 @@
 
       <section class="feature-band" id="tamir">
         <div class="feature-illustration"><div class="tool-sun">✦</div><div class="tool-card"><span>⌁</span><b>UFAK BİR TAMİR</b><i>✓</i></div><div class="tool-shadow"></div><span class="feature-spark spark-left">✦</span><span class="feature-spark spark-right">✳</span></div>
-        <div class="feature-copy"><span class="section-kicker">EVDE GÜVENLİ TAMİR</span><h2>Küçük sorunlara<br /><em>net çözümler.</em></h2><p>Basit bakım işleri için malzeme listesi, kolay takip edilen adımlar ve ne zaman durup uzmana başvuracağını söyleyen güvenli rehberler.</p><a href="#projeler" class="button button-coral">Tamir rehberlerine bak <span>→</span></a></div>
+        <div class="feature-copy"><span class="section-kicker">EVDE GÜVENLİ TAMİR</span><h2>Küçük sorunlara<br /><em>net çözümler.</em></h2><p>Basit bakım işleri için malzeme listesi, kolay takip edilen adımlar ve ne zaman durup uzmana başvuracağını söyleyen güvenli rehberler.</p><a href="#projeler" class="button button-coral" data-filter="Evde Tamir">Tamir rehberlerine bak <span>→</span></a></div>
         <div class="feature-stamp">ÖNCE<br /><b>GÜVENLİK</b><br />SONRA TAMİR</div>
       </section>
 
@@ -112,12 +112,12 @@
           <label class="search-box"><span>⌕</span><input id="projectSearch" type="search" placeholder="Proje veya malzeme ara..." aria-label="Proje veya malzeme ara" /><kbd>/</kbd></label>
         </div>
         <div class="filter-row" role="group" aria-label="Proje filtresi">
-          <button class="filter-chip selected" data-filter="Tümü">✦ Tümü <span>8</span></button>
+          <button class="filter-chip selected" data-filter="Tümü">✦ Tümü <span>57</span></button>
           <button class="filter-chip" data-filter="İlkokul">İlkokul</button>
           <button class="filter-chip" data-filter="Ortaokul">Ortaokul</button>
           <button class="filter-chip" data-filter="Lise">Lise</button>
           <span class="filter-divider"></span>
-          <button class="filter-chip filter-outline" data-filter="Evde Tamir">⌂ Evde tamir</button>
+          <button class="filter-chip filter-outline" data-filter="Evde Tamir">⌂ Evde tamir <span>50</span></button>
           <button class="filter-chip filter-outline" data-filter="Elektronik">ϟ Elektronik</button>
           <button class="filter-chip filter-outline" data-filter="Robotik">✳ Robotik</button>
           <button class="filter-chip filter-outline" data-filter="Programlama">&lt;/&gt; Kodlama</button>
@@ -140,6 +140,7 @@
   </div>
   <div class="modal-backdrop" id="modalBackdrop" hidden><article class="project-modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle"><button class="modal-close" id="modalClose" aria-label="Kapat">×</button><div id="modalContent"></div></article></div>
   <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="./home-repairs.js" defer></script>
   <script src="./app.js" defer></script>
   <script>if ('serviceWorker' in navigator && location.protocol.startsWith('http')) navigator.serviceWorker.register('./service-worker.js').catch(()=>{});</script>
 </body>
