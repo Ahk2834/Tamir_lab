@@ -1,8 +1,8 @@
-const CACHE = 'yenilikcilab-v12';
+const CACHE = 'yenilikcilab-v13';
 const FILES = [
   './', './index.html', './styles.css', './classroom-tools.css', './app.js',
   './classroom-tools.js', './home-repairs.js', './workshop-projects.js',
-  './project-schematics.js', './manifest.webmanifest', './icon.svg'
+  './project-schematics.js', './vendor/html2pdf.bundle.min.js', './vendor/capacitor-bridge.js', './manifest.webmanifest', './icon.svg'
 ];
 
 self.addEventListener('install', event => {

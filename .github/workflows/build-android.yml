@@ -21,6 +21,7 @@ jobs:
         with:
           packages: platform-tools
       - run: npm install
+      - run: npm run build:assets
       - run: npx cap add android
       - run: npx cap sync android
       - run: chmod +x android/gradlew && cd android && ./gradlew assembleDebug

@@ -10,7 +10,7 @@ YenilikçiLab; evde düşük riskli küçük tamir rehberleri ile elektronik, ro
 - Evde Güvenli Tamir, Elektronik, Robotik, Programlama ve STEM atölye girişleri
 - Örnek proje kataloğunda arama, seviye/kategori filtresi ve favoriler
 - Proje detayında malzemeler, adımlar ve güvenlik notu
-- Öğretmen/aile için düzenlenebilir, cihazda taslak tutan çalışma föyü; indirilebilir HTML, paylaşım ve tarayıcı yazdırma seçenekleri
+- Öğretmen/aile için düzenlenebilir çalışma föyü; doğrudan PDF indirme, Android paylaşım menüsünden yazdırma/kaydetme
 - Cihazda saklanan favoriler, tamamlanan projeler ve isteğe bağlı prototip fotoğrafı
 - Web sürümünde çevrim dışı önbellek; kişisel ilerleme verisi sunucuya gönderilmez
 - GitHub Pages ve Android APK için GitHub Actions iş akışları
@@ -21,7 +21,7 @@ WordPress yönetim paneli için tam sayfa düzenleme, proje alanları ve taslak 
 
 ## Geliştirme
 
-Statik web arayüzü `www/` içinde bulunur. Yerel web sunucusu için herhangi bir statik sunucu kullanılabilir. Android kabuğu Capacitor ile oluşturulur; GitHub Actions Java/Android SDK ortamını kurar, APK'yı derler ve artifact olarak yükler.
+Statik web arayüzü `www/` içinde bulunur. İlk kullanımda `npm ci` ve `npm run build:assets` komutları PDF üretici dosyalarını `www/vendor/` içine hazırlar; ardından yerel bir statik sunucu ile `www/` klasörü açılabilir. GitHub Pages ve Android Actions iş akışları bu hazırlığı otomatik yapar. Android kabuğu Capacitor ile oluşturulur; GitHub Actions Java/Android SDK ortamını kurar, APK'yı derler ve artifact olarak yükler. Android uygulamasında föy PDF'i sistem paylaşım menüsüne gider; buradan yazdırma veya dosyalara kaydetme hedefi seçilir.
 
 ## Güvenlik içerik ilkeleri
 
