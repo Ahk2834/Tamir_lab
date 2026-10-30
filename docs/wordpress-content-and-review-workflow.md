@@ -40,7 +40,7 @@ Eksik güvenlik notu, şema, adım veya yaş düzeyi bulunan proje yayıma hazı
 
 ## Öğretmen ve aile föyü
 
-Yazdırılabilir föy proje verisinden üretilir. Kazanım, düzey, süre, malzeme listesi, şema, adımlar ve güvenlik notuna ek olarak sınıf/grup, tarih, gözlem ve sonuç alanları içerir. Öğretmen proje açıklaması, malzeme/adım metni ve sınıf notlarını föy taslağında düzenleyebilir; bu değişiklikler yalnızca cihazda taslak olarak kalır ve katalogdaki asıl proje kaydını değiştirmez. Güvenlik notu föyde kilitlidir. Föy doğrudan PDF olarak indirilir. Android uygulamasında sistem paylaşım menüsü açılır; buradan yazdırma veya dosyalara kaydetme hedefi seçilir. Sınıf paylaşımı için öğrenci hesabı veya çocuklardan kişisel bilgi toplama zorunlu değildir.
+Yazdırılabilir föy proje verisinden üretilir. Kazanım, düzey, süre, malzeme listesi, şema, adımlar ve güvenlik notuna ek olarak sınıf/grup, tarih, gözlem ve sonuç alanları içerir. Öğretmen/aile düzenlemeleri yalnızca açık föyün belleğinde tutulur; proje kataloğuna veya cihaz depolamasına yazılmaz ve föy kapatıldığında silinir. Güvenlik notu föyde kilitlidir. Föy doğrudan PDF olarak indirilir. Android uygulamasında sistem paylaşım menüsü açılır; buradan yazdırma veya dosyalara kaydetme hedefi seçilir. PDF kullanıcı tarafından paylaşılırsa alıcılar bu dosyadaki düzenlemeleri görür. Sınıf paylaşımı için öğrenci hesabı veya çocuklardan kişisel bilgi toplama zorunlu değildir.
 
 ## Veri ve gizlilik
 
