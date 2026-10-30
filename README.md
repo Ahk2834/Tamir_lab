@@ -10,7 +10,7 @@ YenilikçiLab; evde düşük riskli küçük tamir rehberleri ile elektronik, ro
 - Evde Güvenli Tamir, Elektronik, Robotik, Programlama ve STEM atölye girişleri
 - Örnek proje kataloğunda arama, seviye/kategori filtresi ve favoriler
 - Proje detayında malzemeler, adımlar ve güvenlik notu
-- Öğretmen/aile için yazdırılabilir, projeye özel çalışma föyü
+- Öğretmen/aile için düzenlenebilir, cihazda taslak tutan çalışma föyü; indirilebilir HTML, paylaşım ve tarayıcı yazdırma seçenekleri
 - Cihazda saklanan favoriler, tamamlanan projeler ve isteğe bağlı prototip fotoğrafı
 - Web sürümünde çevrim dışı önbellek; kişisel ilerleme verisi sunucuya gönderilmez
 - GitHub Pages ve Android APK için GitHub Actions iş akışları
