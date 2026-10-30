@@ -1,4 +1,4 @@
-name: Publish TamirLab web app
+name: Publish YenilikçiLab web app
 on:
   workflow_dispatch:
 permissions:

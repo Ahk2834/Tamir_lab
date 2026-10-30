@@ -1,4 +1,4 @@
-# TamirLab Eğitim Atölyeleri — 150 Proje Fikri
+# YenilikçiLab Eğitim Atölyeleri — 150 Proje Fikri
 
 ## İçerik yapısı
 

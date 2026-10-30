@@ -1,8 +1,8 @@
-# TamirLab
+# YenilikçiLab
 
 **Tamir et, keşfet, üret.**
 
-TamirLab; evde düşük riskli küçük tamir rehberleri ile elektronik, robotik, programlama ve STEM deney atölyelerini bir araya getiren web/PWA ve Android APK projesidir.
+YenilikçiLab; evde düşük riskli küçük tamir rehberleri ile elektronik, robotik, programlama ve STEM deney atölyelerini bir araya getiren web/PWA ve Android APK projesidir.
 
 ## Mevcut arayüz
 

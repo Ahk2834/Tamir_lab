@@ -4,18 +4,18 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
   <meta name="theme-color" content="#7547ff" />
-  <meta name="description" content="TamirLab: evde güvenli tamir, elektronik, robotik ve programlama atölyeleri." />
+  <meta name="description" content="YenilikçiLab: evde güvenli tamir, elektronik, robotik, programlama ve STEM projeleri." />
   <link rel="manifest" href="./manifest.webmanifest" />
   <link rel="icon" href="./icon.svg" type="image/svg+xml" />
   <link rel="stylesheet" href="./styles.css" />
-  <title>TamirLab — Tamir et, keşfet, üret.</title>
+  <title>YenilikçiLab — Tamir et, keşfet, üret.</title>
 </head>
 <body>
   <div class="app-shell">
     <header class="topbar">
-      <a class="brand" href="#top" aria-label="TamirLab ana sayfa">
+      <a class="brand" href="#top" aria-label="YenilikçiLab ana sayfa">
         <span class="brand-mark"><span>✦</span></span>
-        <span class="brand-name">tamir<span>lab</span><small>EV • ELEKTRONİK • STEM</small></span>
+        <span class="brand-name">Yenilikçi<span>Lab</span><small>EV • ELEKTRONİK • STEM</small></span>
       </a>
       <nav class="desktop-nav" aria-label="Ana menü">
         <a class="nav-link active" href="#atolyeler">Atölyeler</a>
@@ -61,10 +61,10 @@
           <div class="mini-gear gear-one">⚙</div><div class="mini-gear gear-two">⚙</div>
           <div class="art-caption"><span class="caption-line"></span> KÜÇÜK BİR FİKİR, KOCAMAN BİR KEŞİF</div>
         </div>
-        <div class="hero-bottom"><span>BAŞLANGIÇ NOKTAN</span><b>Bir merak, bir fikir, bir TamirLab projesi.</b><span class="scroll-cue">AŞAĞI KAYDIR ↓</span></div>
+        <div class="hero-bottom"><span>BAŞLANGIÇ NOKTAN</span><b>Bir merak, bir fikir, bir YenilikçiLab projesi.</b><span class="scroll-cue">AŞAĞI KAYDIR ↓</span></div>
       </section>
 
-      <section class="quick-stats" aria-label="TamirLab özellikleri">
+      <section class="quick-stats" aria-label="YenilikçiLab özellikleri">
         <div class="stat"><span class="stat-icon stat-purple">✦</span><div><b>4 atölye</b><small>Tamir, elektronik, robotik, kodlama</small></div></div>
         <div class="stat"><span class="stat-icon stat-coral">◎</span><div><b>3 seviye</b><small>İlkokul • Ortaokul • Lise</small></div></div>
         <div class="stat"><span class="stat-icon stat-turquoise">↗</span><div><b>150 eğitim projesi</b><small>Her seviyeye 50 proje</small></div></div>
@@ -137,12 +137,13 @@
       <section class="safety-strip"><div class="safety-shield">✓</div><div><b>Güvenli sınırlar, iyi fikirlerin parçasıdır.</b><p>Uzmanlık veya tehlikeli müdahale gerektiren işler uygulamada adım adım anlatılmaz.</p></div><a href="#tamir">Güvenlik yaklaşımını gör <span>→</span></a></section>
     </main>
 
-    <footer class="footer"><a class="brand brand-footer" href="#top"><span class="brand-mark"><span>✦</span></span><span class="brand-name">tamir<span>lab</span><small>TAMİR ET, KEŞFET, ÜRET.</small></span></a><p>Bir fikirle başlar. Birlikte öğrenerek büyür.</p><span class="footer-copy">© TamirLab · Güvenli üretim, güzel keşifler.</span></footer>
+    <footer class="footer"><a class="brand brand-footer" href="#top"><span class="brand-mark"><span>✦</span></span><span class="brand-name">Yenilikçi<span>Lab</span><small>TAMİR ET, KEŞFET, ÜRET.</small></span></a><p>Bir fikirle başlar. Birlikte öğrenerek büyür.</p><span class="footer-copy">© YenilikçiLab · Güvenli üretim, güzel keşifler.</span></footer>
   </div>
   <div class="modal-backdrop" id="modalBackdrop" hidden><article class="project-modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle"><button class="modal-close" id="modalClose" aria-label="Kapat">×</button><div id="modalContent"></div></article></div>
   <div class="toast" id="toast" role="status" aria-live="polite"></div>
   <script src="./home-repairs.js" defer></script>
   <script src="./workshop-projects.js" defer></script>
+  <script src="./project-schematics.js" defer></script>
   <script src="./app.js" defer></script>
   <script>if ('serviceWorker' in navigator && location.protocol.startsWith('http')) navigator.serviceWorker.register('./service-worker.js').catch(()=>{});</script>
 </body>
