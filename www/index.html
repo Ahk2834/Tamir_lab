@@ -8,6 +8,7 @@
   <link rel="manifest" href="./manifest.webmanifest" />
   <link rel="icon" href="./icon.svg" type="image/svg+xml" />
   <link rel="stylesheet" href="./styles.css" />
+  <link rel="stylesheet" href="./classroom-tools.css" />
   <title>YenilikçiLab — Tamir et, keşfet, üret.</title>
 </head>
 <body>
@@ -21,6 +22,7 @@
         <a class="nav-link active" href="#atolyeler">Atölyeler</a>
         <a class="nav-link" href="#projeler">Projeler</a>
         <a class="nav-link" href="#tamir">Evde tamir</a>
+        <a class="nav-link" href="#ogretmen">Öğretmen / aile</a>
       </nav>
       <div class="top-actions">
         <button class="icon-button search-open" aria-label="Arama" title="Ara">⌕</button>
@@ -112,6 +114,8 @@
         </div>
         <div class="filter-row" role="group" aria-label="Proje filtresi">
           <button class="filter-chip selected" data-filter="Tümü">✦ Tümü <span>200</span></button>
+          <button class="filter-chip" data-filter="Favoriler">♥ Favorilerim <span id="favoritesCount">0</span></button>
+          <button class="filter-chip" data-filter="Tamamlananlar">✓ Tamamladıklarım <span id="completedCount">0</span></button>
           <button class="filter-chip" data-filter="İlkokul">İlkokul</button>
           <button class="filter-chip" data-filter="Ortaokul">Ortaokul</button>
           <button class="filter-chip" data-filter="Lise">Lise</button>
@@ -124,7 +128,16 @@
         </div>
         <div class="project-grid" id="projectGrid" aria-live="polite"></div>
         <div class="empty-state" id="emptyState" hidden><div>🔎</div><h3>Bu aramayla eşleşen proje bulamadık.</h3><p>Başka bir kelime veya kategori deneyebilirsin.</p></div>
-        <div class="load-more-wrap"><span class="button button-outline" aria-disabled="true">200 rehber · 150 eğitim + 50 tamir</span><small>Bir kartı açarak malzemeleri, adımları ve güvenlik notlarını gör.</small></div>
+        <div class="load-more-wrap"><span class="button button-outline" aria-disabled="true" id="catalogCount">Projeler yükleniyor</span><small>Bir kartı açarak malzemeleri, adımları, güvenlik notlarını veya sınıf föyünü gör.</small></div>
+      </section>
+
+      <section class="teacher-section" id="ogretmen" aria-labelledby="teacherTitle">
+        <div class="teacher-copy"><span class="section-kicker">ÖĞRETMEN VE AİLE MODU</span><h2 id="teacherTitle">Projeyi sınıfa veya eve taşı.</h2><p>Proje kartından yazdırılabilir çalışma föyü alın. Föy; kazanımı, malzemeleri, projeye özel şemayı, adımları, güvenlik notunu ve öğrenci gözlem alanını içerir.</p></div>
+        <div class="teacher-points">
+          <div><span>01</span><b>Hesap gerektirmez</b><small>Favoriler ve tamamlanma bilgisi bu cihazda saklanır.</small></div>
+          <div><span>02</span><b>Çevrim dışı açılır</b><small>Uygulama dosyaları ve proje kataloğu cihazda kullanılabilir.</small></div>
+          <div><span>03</span><b>Yayımdan önce inceleme</b><small>Yeni içerikler güvenlik ve içerik kontrolünden geçecek şekilde hazırlanır.</small></div>
+        </div>
       </section>
 
       <section class="family-banner">
@@ -145,9 +158,11 @@
   </div>
   <div class="modal-backdrop" id="modalBackdrop" hidden><article class="project-modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle"><button class="modal-close" id="modalClose" aria-label="Kapat">×</button><div id="modalContent"></div></article></div>
   <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <div class="connection-status" id="connectionStatus" role="status" aria-live="polite" hidden></div>
   <script src="./home-repairs.js" defer></script>
   <script src="./workshop-projects.js" defer></script>
   <script src="./project-schematics.js" defer></script>
+  <script src="./classroom-tools.js" defer></script>
   <script src="./app.js" defer></script>
   <script>if ('serviceWorker' in navigator && location.protocol.startsWith('http')) navigator.serviceWorker.register('./service-worker.js').catch(()=>{});</script>
 </body>

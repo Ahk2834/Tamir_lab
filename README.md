@@ -10,9 +10,14 @@ YenilikçiLab; evde düşük riskli küçük tamir rehberleri ile elektronik, ro
 - Evde Güvenli Tamir, Elektronik, Robotik, Programlama ve STEM atölye girişleri
 - Örnek proje kataloğunda arama, seviye/kategori filtresi ve favoriler
 - Proje detayında malzemeler, adımlar ve güvenlik notu
+- Öğretmen/aile için yazdırılabilir, projeye özel çalışma föyü
+- Cihazda saklanan favoriler, tamamlanan projeler ve isteğe bağlı prototip fotoğrafı
+- Web sürümünde çevrim dışı önbellek; kişisel ilerleme verisi sunucuya gönderilmez
 - GitHub Pages ve Android APK için GitHub Actions iş akışları
 
 Katalogdaki örnekler prototip arayüzü gösterir; 1–4, 5–8 ve 9–12. sınıflar için 50'şer doğrulanmış proje içeriği ürün yol haritasında yer alır. Sayı tamamlanmadan 150 proje yayımlanmış gibi gösterilmemelidir.
+
+WordPress yönetim paneli için tam sayfa düzenleme, proje alanları ve taslak → inceleme → yayımlama akışı [içerik modelinde](docs/wordpress-content-and-review-workflow.md) tanımlıdır. WordPress henüz canlı bir sunucuya bağlanmadı; APK ve web arayüzü şu an statik yerel katalogla çalışır.
 
 ## Geliştirme
 
