@@ -1,5 +1,5 @@
-// 49 ek, düşük riskli ev içi bakım/küçük onarım rehberi.
-// Mevcut kapı menteşesi rehberiyle birlikte toplam 50 tamir rehberi eder.
+// 49 düşük riskli ev içi bakım/küçük onarım rehberi.
+// Proje kataloğunda 150 eğitim projesiyle birlikte toplam 199 kart bulunur.
 const repairData = [
   ["cabinet-handle", "Dolap kulpunu sıkılaştırma", "Gevşeyen dolap kulpunu uygun tornavidayla kontrol et.", ["Uygun uçlu el tornavidası", "Yumuşak bez"], ["Dolabın kapağını boşalt ve sağlam durduğunu kontrol et.", "Kulpun vida başını bul; doğru tornavida ucunu seç.", "Vidayı zorlamadan, saat yönünde azar azar sık.", "Kulpun düz durduğunu ve kapağın rahat açıldığını kontrol et."], "Vida dönmüyor, yuva sıyrılmış veya kapak çatlaksa dur. Elektrikli vidalama kullanma; küçük vidaları çocuklardan uzak tut.", "Doğru el aleti seçme ve gevşek bağlantıyı fark etme.", "🪛", "10 dk", "Kolay"],
   ["cabinet-hinge-clean", "Dolap menteşesini temizleme", "Erişilebilir dolap menteşesindeki toz ve kiri güvenli biçimde al.", ["Kuru yumuşak bez", "Yumuşak fırça"], ["Dolabı boşaltıp kapağı açık ve sabit tut.", "Gevşek tozu kuru bez veya yumuşak fırçayla al.", "Üretici bakım öneriyorsa yalnızca uygun ürünü çok az uygula.", "Fazlalığı sil ve kapağı yavaşça birkaç kez dene."], "Menteşeyi sökme veya kapağı taşıma. Kapak ağırsa, sarkıyorsa ya da menteşe kırılmışsa yetişkin işlemi bıraksın ve uzmana danışsın.", "Basit bakım, hareketli parçaları gözlemleme.", "🧽", "15 dk", "Kolay"],
