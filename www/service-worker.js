@@ -1,7 +1,7 @@
-const CACHE = 'yenilikcilab-v20';
+const CACHE = 'yenilikcilab-v21';
 const FILES = [
   './', './index.html', './styles.css', './classroom-tools.css', './app.js',
-  './classroom-tools.js', './home-repairs.js', './workshop-projects.js?v=19', './workshop-projects.js',
+  './classroom-tools.js', './home-repairs.js', './workshop-projects.js?v=20', './workshop-projects.js',
   './vendor/html2pdf.bundle.min.js', './vendor/capacitor-bridge.js', './manifest.webmanifest', './icon.svg'
 ];
 
