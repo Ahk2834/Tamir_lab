@@ -1,4 +1,4 @@
-const CACHE = 'yenilikcilab-v21';
+const CACHE = 'yenilikcilab-v22';
 const FILES = [
   './', './index.html', './styles.css', './classroom-tools.css', './app.js',
   './classroom-tools.js', './home-repairs.js', './workshop-projects.js?v=20', './workshop-projects.js',
