@@ -12,8 +12,7 @@ function render(){let list=projects.filter(matches);if(!state.expanded&&state.fi
 function showToast(message){toast.textContent=message;toast.classList.add('show');clearTimeout(showToast.timer);showToast.timer=setTimeout(()=>toast.classList.remove('show'),2200)}
 function projectDiagram(p){
  const esc=v=>String(v).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
- const spec=window.TAMIRLAB_PROJECT_DIAGRAMS&&window.TAMIRLAB_PROJECT_DIAGRAMS[p.id];
- return spec?renderProjectSchematic(p,spec,esc):repairDiagram(p,esc);
+ return repairDiagram(p,esc);
 }
 function diagramLines(value,max=20){const words=String(value).split(/\s+/),out=[];let line='';for(const word of words){if(line&&(line+' '+word).length>max){out.push(line);line=word}else line=(line+' '+word).trim()}if(line)out.push(line);return out.slice(0,3)}
 function diagramText(value,x,y,max=20,cls='diagram-node-label'){return `<text x="${x}" y="${y}" text-anchor="middle" class="${cls}">${diagramLines(value,max).map((line,i)=>`<tspan x="${x}" dy="${i?15:0}">${esc(line)}</tspan>`).join('')}</text>`}
@@ -103,7 +102,10 @@ function renderExperimentSchematic(p,d,esc){
 }
 function repairDiagram(p,esc){
  const steps=p.steps||[],materials=p.materials||[];
- return `<section class="modal-section diagram-section"><h3>Parça kontrolü ve güvenli işlem planı</h3><p class="diagram-caption"><b>${esc(p.title)}</b> için rehberdeki gerçek işlem adımları:</p><ol class="repair-diagram-steps">${steps.map((s,i)=>`<li><span>${i+1}</span><div><b>${i===0?'Ön kontrol':i===steps.length-1?'Son kontrol':'İşlem '+i}</b><p>${esc(s)}</p></div></li>`).join('')}</ol><p class="diagram-caption"><b>Bu rehberde kullanılanlar:</b> ${materials.slice(0,3).map(esc).join(' · ')}</p><div class="modal-warning"><b>Durma noktası:</b> ${esc(p.safety)}</div></section>`;
+ const category=p.category||p.tag||'Etkinlik';
+ const materialNodes=materials.map(item=>`<li>${esc(item)}</li>`).join('');
+ const stepNodes=steps.map((step,i)=>`<li class="activity-flow__step"><span class="activity-flow__number">${i+1}</span><p>${esc(step)}</p></li>`).join('');
+ return `<section class="modal-section activity-flow"><h3>Etkinlik uygulama şeması</h3><p class="activity-flow__meta">${esc(category)} · ${esc(p.title)}</p><p class="activity-flow__purpose"><b>Etkinliğin amacı:</b> ${esc(p.description)}</p><div class="activity-flow__materials"><h4>Gerekli malzemeler</h4><ul>${materialNodes}</ul></div><h4 class="activity-flow__steps-title">Uygulama sırası</h4><ol class="activity-flow__steps">${stepNodes}</ol></section>`;
 }
 function openProject(id){
  const p=projects.find(x=>x.id===id);if(!p)return;
