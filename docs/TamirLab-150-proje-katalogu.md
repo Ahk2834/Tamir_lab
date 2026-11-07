@@ -41,7 +41,7 @@ Tamir rehberleri ayrı bir bölümde 50 güvenli küçük bakım/onarım rehberi
 
 13. **R01 — Şırıngalı hidrolik kepçe:** İğnesiz şırınga ve suyla küçük karton kepçenin kolunu hareket ettir.
 14. **R02 — Karton kamlı yürüyen hayvan:** El çarkını çevirerek bacakları hareket eden bir karton model yap.
-15. **R03 — Titreşimli kıllı robot:** Kapalı AA pil yuvası ve küçük eğitim motoruyla düz zeminde ilerleyen robot tasarla.
+15. **R03 — Titreşimli robot:** Kapalı AA pil yuvası ve küçük eğitim motoruyla düz zeminde ilerleyen robot tasarla.
 16. **R04 — Balonla ilerleyen araç:** Havası boşalan balonun itişiyle hafif aracı hareket ettir.
 17. **R05 — Dişli çarklı karton robot:** Büyük karton dişlileri elle döndürüp hareket aktarımını göster.
 18. **R06 — Lastik bantlı mini araba:** Gerilmiş lastiğin enerjisini tekerleklere aktaran düşük hızlı araç yap.
