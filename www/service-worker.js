@@ -1,4 +1,4 @@
-const CACHE = 'yenilikcilab-v18';
+const CACHE = 'yenilikcilab-v19';
 const FILES = [
   './', './index.html', './styles.css', './classroom-tools.css', './app.js',
   './classroom-tools.js', './home-repairs.js', './workshop-projects.js',
@@ -18,7 +18,7 @@ self.addEventListener('activate', event => {
 self.addEventListener('fetch', event => {
   const request = event.request;
   if (request.method !== 'GET' || new URL(request.url).origin !== self.location.origin) return;
-  event.respondWith(fetch(request).then(response => {
+  event.respondWith(fetch(request, {cache:'no-store'}).then(response => {
     if (response && response.ok) {
       const write = caches.open(CACHE).then(cache => cache.put(request, response.clone()));
       event.waitUntil(write);
